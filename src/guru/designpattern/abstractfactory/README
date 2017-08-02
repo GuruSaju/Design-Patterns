@@ -1,3 +1,5 @@
 Abstract Factory pattern is a creational design pattern.
 
 Abstract Factory Pattern isolates the client code from concrete (implementation) classes.
+every Abstract Factory is a type of Facade.
+
