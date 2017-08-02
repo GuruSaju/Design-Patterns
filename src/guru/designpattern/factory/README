@@ -1,0 +1,3 @@
+Factory pattern is a creational design pattern.
+
+Factory Method Pattern allows the sub-classes to choose the type of objects to create.
