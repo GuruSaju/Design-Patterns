@@ -5,11 +5,8 @@ Singleton class structure
 
 Static member :        This contains the instance of the singleton class.
 Private constructor :  This will prevent anybody else to instantiate the Singleton class.
-Static public method : This provides the global point of access to the Singleton object and returns the instance to the 
-                       client calling class.
+Static public method : This provides the global point of access to the Singleton object and returns the instance to the client calling class.
                        
-
-
 
 Singleton vs Static
 
