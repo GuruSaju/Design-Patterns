@@ -1,1 +1,28 @@
-define a class that has only one instance and provides a global point of access to it
+Define a class that has only one instance and provides a global point of access to it
+Singleton patterns are used in logging, caches, thread pools, configuration settings, device driver objects.
+
+Singleton class structure 
+
+Static member :        This contains the instance of the singleton class.
+Private constructor :  This will prevent anybody else to instantiate the Singleton class.
+Static public method : This provides the global point of access to the Singleton object and returns the instance to the 
+                       client calling class.
+                       
+
+
+
+Singleton vs Static
+
+Singleton can implement interfaces and extend classes while the static class cannot (it can extend classes, but it does not inherit their instance members). 
+If we consider a static class it can only be a nested static class as top level class cannot be a static class. 
+Static means that it belongs to a class it is in and not to any instance. So it cannot be a top level class.
+
+Static class will have all its member as static only unlike Singleton.
+
+Singleton can be lazily loaded whereas static will be initialized whenever it is first loaded.
+
+Singleton object stores in Heap but, static object stores in stack.
+
+We can clone the object of Singleton but, we can not clone the static class object.
+
+Singleton can use the Object Oriented feature of polymorphism but static class cannot.
