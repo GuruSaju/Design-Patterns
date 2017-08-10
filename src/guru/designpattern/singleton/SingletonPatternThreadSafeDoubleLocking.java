@@ -37,8 +37,8 @@ public class SingletonPatternThreadSafeDoubleLocking {
 			return singleton;
 		}
 		
-		public void printFromSingletonPatternThreadSafe(){
-			System.out.println("Print from Thread safe Singleton Double chack");
+		public void printFromSingletonPatternThreadSafeDoubleLocking(){
+			System.out.println("Print from Thread safe Singleton Double check");
 		}
 		
 	}
