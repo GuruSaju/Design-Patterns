@@ -7,7 +7,7 @@ Static member :        This contains the instance of the singleton class.
 Private constructor :  This will prevent anybody else to instantiate the Singleton class.
 Static public method : This provides the global point of access to the Singleton object and returns the instance to the client calling class.
                        
-
+Double check locking for no overhead that happens over entire synchronized block
 Singleton vs Static
 
 Singleton can implement interfaces and extend classes while the static class cannot (it can extend classes, but it does not inherit their instance members). 
