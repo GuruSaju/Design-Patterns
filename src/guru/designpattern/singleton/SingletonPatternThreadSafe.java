@@ -9,7 +9,7 @@ public class SingletonPatternThreadSafe {
 	}
 	
 	//global point of access //has to be static to we can call this from anywhere.
-	//make it synchronized to make it thread safe 
+	//make it synchronized to make it thread safe  // but this will give additional overhead.(since threads will be waiting)
 	public static synchronized SingletonPatternThreadSafe getSingleton(){
 		//check if an instance is already created.
 		if(singleton == null){
