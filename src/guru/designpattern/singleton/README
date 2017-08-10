@@ -8,6 +8,7 @@ Private constructor :  This will prevent anybody else to instantiate the Singlet
 Static public method : This provides the global point of access to the Singleton object and returns the instance to the client calling class.
                        
 Double check locking for no overhead that happens over entire synchronized block
+
 Singleton vs Static
 
 Singleton can implement interfaces and extend classes while the static class cannot (it can extend classes, but it does not inherit their instance members). 
@@ -23,3 +24,16 @@ Singleton object stores in Heap but, static object stores in stack.
 We can clone the object of Singleton but, we can not clone the static class object.
 
 Singleton can use the Object Oriented feature of polymorphism but static class cannot.
+
+**********************USES*******************************
+Logging, Cache, Hardware access, single instance of configuration files
+
+*********NOTE****************************8
+When we serialize a class and deserialize it then it creates another instance of the singleton class. 
+Basically as many times as you deserialize the singleton instance it will create multiple instance. 
+Well in this case the best way is to make the singleton as enum. In that way the underlying Java 
+implementation takes care of all the details. If this is not possible then we will need to override 
+the readobject() method to return the same singleton instance.
+
+java.lang.Runtime : In every Java application there is only one Runtime instance that allows the application 
+to interface with the environment it is running. IS AN EXAMPLE OF JAVA SINGLETON.
