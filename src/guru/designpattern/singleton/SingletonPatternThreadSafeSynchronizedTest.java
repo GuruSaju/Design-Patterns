@@ -14,14 +14,14 @@ public class SingletonPatternThreadSafeSynchronizedTest implements Runnable {
 	
 	//there wll only be one instance even in a multi-threaded environment.
 	public static void main(String[] args) {
-		SingletonPatternThreadSafeSynchronizedTest singleThreadFail = new SingletonPatternThreadSafeSynchronizedTest();
+		SingletonPatternThreadSafeSynchronizedTest singleThreadSafe = new SingletonPatternThreadSafeSynchronizedTest();
 		int i = 0;
 		while(i < 100){
-			Thread thread = new Thread(singleThreadFail);
+			Thread thread = new Thread(singleThreadSafe);
 			thread.start();
-			Thread thread1 = new Thread(singleThreadFail);
+			Thread thread1 = new Thread(singleThreadSafe);
 			thread1.start();
-			Thread thread2 = new Thread(singleThreadFail);
+			Thread thread2 = new Thread(singleThreadSafe);
 			thread2.start();
 			i++;
 		}
