@@ -1,0 +1,9 @@
+PROBLEM STATEMENT
+
+Design a small ATM printing application which can generate multiple types of statements of the 
+transaction including Mini Statement, Detailed statement etc. However the customer should be aware of 
+the creation of these statements. Ensure that the memory consumption is minimized.
+
+Use singleton and factory pattern.
+
+Design???? Update soon
